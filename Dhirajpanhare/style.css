@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(155deg, #000, #000B58);
+    background-repeat: repeat;
+} 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* background-color: #000; */
+     /* Ensure header has a background */
+     background: linear-gradient(155deg, #000, #000B58);
+     background-repeat: no-repeat;
+}
+
+header img {
+    height: 35px;
+    width: 80px;
+}
+
+.outer {
+    padding: 1px;
+    animation: a 1s ease-out infinite;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+@keyframes a {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.04);
+    }
+}
+
+.nav-items {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.nav-items a:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px dashed #fff;
+}
+
+.social-items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-items a {
+    padding: 20px;
+    color: #fff;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.hero-section img {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.hero-section .content {
+    padding: 10px;
+    color: #fff;
+    max-width: 700px;
+    text-align: left;
+}
+
+.content h1,
+.content p {
+    margin: 8px;
+}
+
+.content .grade {
+    color: linear-gradient(180deg, red, yellow);
+}
+
+.projects {
+    margin: 50px;
+}
+
+.projects h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.data {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    justify-content: center;
+}
+
+.data img {
+    width: 300px;
+    height: 200px;
+    gap: 20px;
+    outline: 5px solid #fff;
+    outline-offset: 10px;
+    border-radius: 10px;
+}
+
+.data  a{
+ text-align: center;
+}
+.btn {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #D2FF72;
+    font-weight: bold;
+}
+
+.about {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 20px 20px;
+    width: auto;
+}
+
+.Heading{
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+.about .education p{
+    font-size: 12px;
+    margin: 5px;
+    line-height: 30px;
+}
+
+.certificate-container {
+    margin: 50px;
+}
+
+
+.certificate {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    justify-content: center;
+}
+
+.certificate img {
+    width: 300px;
+    height: 200px;
+    gap: 20px;
+   box-shadow: 20px 20px 50px #000;
+   padding: 5px;
+    border-radius: 20px;
+}
+
+
+.contact{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 2px;
+    margin:20px 100px;
+
+  width: auto;
+}
+
+.contact .form label
+{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact .form input
+{
+    display: block;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+.contact .form textarea
+{
+   
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+}
+.contact .detail{
+    margin-top: 10%;
+}
+.contact .detail a{
+text-align: center;
+margin: 10px;
+display: block;
+color: #fff;
+text-decoration: none;
+}
+
+.notes{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 2px;
+    margin:20px 100px;
+
+  width: auto;
+}
+.notes img {
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+}
+.mbtn{
+    padding: 5px;
+    margin: 10px 30px;
+    border-radius: 20px;
+    background-color: #D2FF72;
+    color: #000;
+    
+}
+/* Menu button */
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2.5%;
+    left: 80%;
+    z-index: 1000;
+}
+
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Mobile and tablet screens */
+@media (max-width: 768px) {
+    /* Show the menu button on small screens */
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-items {
+        display: none; /* Hide nav items initially */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        padding: 10px;
+        z-index: 1000;
+    }
+    
+    .socail-items {
+        display: none; /* Hide nav items initially */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        padding: 5px;
+        z-index: 1000;
+    }
+    .nav-items a {
+        padding: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+    }
+
+    .nav-items a:hover {
+        padding-bottom: 2px;
+        border-bottom: 2px dashed #fff;
+    }
+}
+/* When the menu is active, show the nav-items */
+.nav-items.active {
+    display: flex;
+    position: absolute;
+    top: 10;
+     /* Show nav items when the button is clicked */
+}
+.social-items.active{
+    display: flex;
+    justify-content: end;
+    
+}
+
+/* Media Queries for Mobile and Tablet Responsiveness */
+
+/* For Tablets */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .nav-items {
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .hero-section .content {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+
+    .btn {
+        width: 50%;
+    }
+
+    .projects {
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .data {
+        gap: 20px;
+    }
+
+    .data img {
+        gap: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .education {
+        width: 80%;
+        margin-top: 30px;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+    .menu-btn{
+        z-index: 2001;
+        border: none;
+    cursor: pointer;
+    /* position: absolute; */
+    }
+
+    .social-items {
+        display: none;
+        /* position: absolute;
+        top: 90%;
+        left: 18%; */
+        /* right: 20px; */
+        font-size: 15px;
+        padding: 0px;
+        /* margin-top: 1px; */
+        margin-right: 75px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-section img {
+        width: 200px;
+        margin-bottom: 2px;
+    }
+
+    .hero-section .content {
+        max-width: 100%;
+        font-size: 10px;
+    }
+    .content p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .projects {
+        display: grid;
+        justify-content: center;
+        gap: 20px 20px;
+        justify-items: center;
+         margin-right:  50px; 
+        
+    }
+
+    .data img{
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .btn {
+        position: relative;
+        left: 25%;
+        width: 50%;
+        /* margin-bottom: 10px; */
+       
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .education span,
+    .education h1,
+    .education p {
+        font-size: 1rem;
+    }
+
+    .contact{
+        margin: 10px;
+    }
+    .notes{
+        margin: 10px;
+    }
+}
+
+/* For Small Mobile Phones */
+@media (max-width: 350px) {
+    .hero-section img {
+        width: 200px;
+
+    }
+
+    .hero-section .content {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .data img {
+        width: 100%;
+        display: grid;
+        gap: 50px;
+    }
+
+    .about {
+        margin-top: 10px;
+    }
+}
